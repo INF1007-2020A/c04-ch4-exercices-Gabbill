@@ -11,11 +11,19 @@ def is_even_len(string: str) -> bool:
 
 
 def remove_third_char(string: str) -> str:
-    pass
+    begin=string[0:2]
+    end=string[3:]
+    return begin+end
+
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    pass
+    location_w=string.find("w")
+    location_we=location_w+1
+    begin=string[0:location_w]
+    end=string[location_we:]
+    return begin+end
+
 
 
 def get_number_of_char(string: str, char: str) -> int:
